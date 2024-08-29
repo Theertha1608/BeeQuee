@@ -81,14 +81,13 @@ const AppBar = () => {
               variant="body2"
               sx={{ fontWeight: 600 }}
             >
-              LET'S COLLOBORATE
+            Be THE QUEEN
             </Typography>
             <Typography
               component="span"
               variant="body2"
               sx={{ fontWeight: 600 }}
             >
-              YOUR FASION
             </Typography>
           </Box>
         </Box>
@@ -125,7 +124,7 @@ const AppBar = () => {
               position: "absolute",
             }}
           >
-            <Button
+            {/* <Button
               variant="contained"
               sx={{
                 width: "220px",
@@ -135,7 +134,7 @@ const AppBar = () => {
               }}
             >
               Have it{" "}
-            </Button>
+            </Button> */}
           </Box>
         </Box>
 
