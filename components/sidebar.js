@@ -1,5 +1,4 @@
 "use client";
-// abhi
 import {
   Box,
   Button,
@@ -33,11 +32,11 @@ const AppBar = () => {
   };
 
   const menuItems = [
-    { title: "ERP", submenu: ["Option 1", "Option 2"] },
-    { title: "Campus Tour", submenu: ["Option 3", "Option 4"] },
-    { title: "Alumni", submenu: [] },
-    { title: "Careers", submenu: ["Option 5"] },
-    { title: "Quick Linkss", submenu: [] },
+    { title: "Home", submenu: ["Option 1", "Option 2"] },
+    { title: "your choose", submenu: ["Option 3", "Option 4"] },
+    { title: "black squad", submenu: [] },
+    { title: "red wiper", submenu: ["Option 5"] },
+    { title: "new section", submenu: [] },
   ];
   return (
     <Grid>
@@ -51,21 +50,15 @@ const AppBar = () => {
         }}
       >
         <Box sx={{ display: "flex", ml: { md: 10, xs: 0 } }}>
-          <Box
+          {/* <Box
             sx={{
               width: { md: 80 },
               height: { md: 100 },
               display: { md: "flex", xs: "none" },
             }}
           >
-            <img
-              src="https://uxbyte.in/uploads/downloads/assets/icaslogo.jpeg"
-              alt="Ilahia College Logo"
-              layout="responsive" // Ensures the image scales properly
-              width={170} // Default width, will be overridden by `sx` for responsive sizes
-              height={140} // Default height, will be overridden by `sx` for responsive sizes
-            />
-          </Box>
+            BEEQUEE
+          </Box> */}
           <Box
             sx={{
               display: "flex",
@@ -74,20 +67,13 @@ const AppBar = () => {
               ml: 2,
             }}
           >
-            <img
-              src="https://uxbyte.in/uploads/downloads/assets/ilahiatextlogo.png"
-              alt="Ilahia College Logo"
-              width={130}
-              height={100}
-              //  style={{ marginRight: 18 }}
-            />
             <Typography
               component="span"
               variant="body1"
               sx={{ color: "#075985", fontWeight: 750, fontSize: 18 }}
             >
-              {/* College of Arts & Science */}
-              COLLEGE OF ARTS & SCIENCE
+              <span style={{ color: "yellow" }}>BEE</span>{" "}
+              <span style={{ color: "black" }}>QUEE</span>
             </Typography>
 
             <Typography
@@ -95,43 +81,15 @@ const AppBar = () => {
               variant="body2"
               sx={{ fontWeight: 600 }}
             >
-              Affiliated to MG University
+              LET'S COLLOBORATE
             </Typography>
             <Typography
               component="span"
               variant="body2"
               sx={{ fontWeight: 600 }}
             >
-              & AICTE Approved
+              YOUR FASION
             </Typography>
-            <Box
-              sx={{
-                mb: 1,
-                // alignItems: "center",
-                gap: 1,
-                display: { md: "none", xs: "flex" },
-                //  position: "absolute",
-              }}
-            >
-              <img
-                src="https://uxbyte.in/uploads/downloads/assets/mgu.png"
-                alt="Icon"
-                width={50}
-                height={50}
-              />
-              <img
-                src="https://uxbyte.in/uploads/downloads/assets/aicte.png"
-                alt="Icon"
-                width={50}
-                height={50}
-              />
-              <Button
-                variant="contained"
-                sx={{ width: "253px", height: "50px" }}
-              >
-                Admission 2024-25
-              </Button>
-            </Box>
           </Box>
         </Box>
         {/* Drawer toggle for mobile */}
@@ -141,7 +99,6 @@ const AppBar = () => {
           </IconButton>
         </Box>
 
-        {/* Links on larger screens */}
         <Box
           sx={{
             display: { xs: "none", md: "flex" },
@@ -151,15 +108,14 @@ const AppBar = () => {
         >
           <Typography sx={{ fontWeight: 700 }}>Contacts</Typography>
 
-          <Typography sx={{ fontWeight: 700 }}>ERP</Typography>
-          <Typography sx={{ fontWeight: 700 }}>Campus Tour</Typography>
-          <Typography sx={{ fontWeight: 700 }}>Alumni</Typography>
+          <Typography sx={{ fontWeight: 700 }}>about</Typography>
+          <Typography sx={{ fontWeight: 700 }}>red carpet</Typography>
+          <Typography sx={{ fontWeight: 700 }}>black squad</Typography>
           <Typography sx={{ fontWeight: 700 }}>Careers</Typography>
           <Box sx={{ display: "flex" }}>
-            <Typography sx={{ fontWeight: 700 }}>Quick Links</Typography>
+            <Typography sx={{ fontWeight: 700 }}>favourate</Typography>
             <ExpandMoreIcon />
           </Box>
-          {/* Button and logos below the college name */}
           <Box
             sx={{
               mt: 6,
@@ -169,20 +125,16 @@ const AppBar = () => {
               position: "absolute",
             }}
           >
-            <img
-              src="https://uxbyte.in/uploads/downloads/assets/mgu.png"
-              alt="Icon"
-              width={50}
-              height={50}
-            />
-            <img
-              src="https://uxbyte.in/uploads/downloads/assets/aicte.png"
-              alt="Icon"
-              width={50}
-              height={50}
-            />
-            <Button variant="contained" sx={{ width: "220px", height: "50px" }}>
-              Admission 2024-25
+            <Button
+              variant="contained"
+              sx={{
+                width: "220px",
+                height: "50px",
+                backgroundColor: "yellow",
+                color: "black",
+              }}
+            >
+              Have it{" "}
             </Button>
           </Box>
         </Box>
@@ -195,13 +147,6 @@ const AppBar = () => {
                 display: "flex",
               }}
             >
-              <img
-                src="https://uxbyte.in/uploads/downloads/assets/icaslogo.jpeg"
-                alt="Ilahia College Logo"
-                layout="responsive" // Ensures the image scales properly
-                width={30} // Default width, will be overridden by `sx` for responsive sizes
-                height={20} // Default height, will be overridden by `sx` for responsive sizes
-              />
               <Box
                 sx={{
                   display: "flex",
@@ -209,38 +154,7 @@ const AppBar = () => {
                   gap: 0.5,
                   ml: 2,
                 }}
-              >
-                <img
-                  src="https://uxbyte.in/uploads/downloads/assets/ilahiatextlogo.png"
-                  alt="Ilahia College Logo"
-                  width={70}
-                  height={30}
-                  //  style={{ marginRight: 18 }}
-                />
-                <Typography
-                  component="span"
-                  variant="body1"
-                  sx={{ color: "#075985", fontWeight: 750, fontSize: 12 }}
-                >
-                  {/* College of Arts & Science */}
-                  COLLEGE OF ARTS & SCIENCE
-                </Typography>
-
-                <Typography
-                  // component="span"
-                  // variant="body2"
-                  sx={{ fontWeight: 600, fontSize: 10 }}
-                >
-                  Affiliated to MG University
-                </Typography>
-                <Typography
-                  // component="span"
-                  //  variant="body2"
-                  sx={{ fontWeight: 600, fontSize: 10 }}
-                >
-                  & AICTE Approved
-                </Typography>
-              </Box>
+              ></Box>
             </Box>
 
             <IconButton
@@ -265,12 +179,6 @@ const AppBar = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              {/* <Typography
-                variant="h6"
-                sx={{ fontWeight: "bold", textAlign: "center" }}
-              >
-                Menu
-              </Typography> */}
               <List>
                 {menuItems.map((item, index) => (
                   <React.Fragment key={index}>
