@@ -4,7 +4,8 @@ import Hero from "@/components/mainpage/hero";
 import NewItems from "@/components/mainpage/newItems";
 import AppBar from "@/components/sidebar";
 import Image from "next/image";
-const Home = () => {
+
+const Dashboard = () => {
   return (
     <main>
       <div className="mx-10 mt-4">
@@ -15,4 +16,5 @@ const Home = () => {
     </main>
   );
 };
-export default Home;
+
+export default Dashboard;

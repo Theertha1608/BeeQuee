@@ -70,7 +70,7 @@ const AppBar = () => {
             <Typography
               component="span"
               variant="body1"
-              sx={{ color: "#075985", fontWeight: 750, fontSize: 18 }}
+              sx={{ color: "#075985", fontWeight: 750, fontSize: 32 }}
             >
               <span style={{ color: "yellow" }}>BEE</span>{" "}
               <span style={{ color: "black" }}>QUEE</span>
@@ -81,14 +81,13 @@ const AppBar = () => {
               variant="body2"
               sx={{ fontWeight: 600 }}
             >
-            Be THE QUEEN
+              fashion studio
             </Typography>
             <Typography
               component="span"
               variant="body2"
               sx={{ fontWeight: 600 }}
-            >
-            </Typography>
+            ></Typography>
           </Box>
         </Box>
         {/* Drawer toggle for mobile */}
@@ -102,18 +101,19 @@ const AppBar = () => {
           sx={{
             display: { xs: "none", md: "flex" },
             gap: 2,
-            mr: 4,
+            pr: 28,
+            pt: 4,
           }}
         >
-          <Typography sx={{ fontWeight: 700 }}>Contacts</Typography>
+          <Typography sx={{ fontWeight: 600 }}>contacts</Typography>
 
-          <Typography sx={{ fontWeight: 700 }}>about</Typography>
-          <Typography sx={{ fontWeight: 700 }}>red carpet</Typography>
-          <Typography sx={{ fontWeight: 700 }}>black squad</Typography>
-          <Typography sx={{ fontWeight: 700 }}>Careers</Typography>
+          <Typography sx={{ fontWeight: 600 }}>about</Typography>
+          <Typography sx={{ fontWeight: 600 }}>red carpet</Typography>
+          <Typography sx={{ fontWeight: 600 }}>black squad</Typography>
+          <Typography sx={{ fontWeight: 600 }}>careers</Typography>
           <Box sx={{ display: "flex" }}>
-            <Typography sx={{ fontWeight: 700 }}>favourate</Typography>
-            <ExpandMoreIcon />
+            <Typography sx={{ fontWeight: 600 }}>favourate</Typography>
+            {/* <ExpandMoreIcon /> */}
           </Box>
           <Box
             sx={{
