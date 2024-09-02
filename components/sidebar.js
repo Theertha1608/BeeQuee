@@ -70,16 +70,16 @@ const AppBar = () => {
             <Typography
               component="span"
               variant="body1"
-              sx={{ color: "#075985", fontWeight: 750, fontSize: 32 }}
+              sx={{ color: "#075985", fontWeight: 750, fontSize: 40 }}
             >
-              <span style={{ color: "yellow" }}>BEE</span>{" "}
+              <span style={{ color: "#FFDF00" }}>BEE</span>{" "}
               <span style={{ color: "black" }}>QUEE</span>
             </Typography>
 
             <Typography
               component="span"
               variant="body2"
-              sx={{ fontWeight: 600 }}
+              sx={{ fontWeight: 600, fontSize: 20 }}
             >
               fashion studio
             </Typography>
@@ -105,14 +105,14 @@ const AppBar = () => {
             pt: 4,
           }}
         >
-          <Typography sx={{ fontWeight: 600 }}>contacts</Typography>
+          <Typography sx={{ fontWeight: 500 }}>Contacts</Typography>
 
-          <Typography sx={{ fontWeight: 600 }}>about</Typography>
-          <Typography sx={{ fontWeight: 600 }}>red carpet</Typography>
-          <Typography sx={{ fontWeight: 600 }}>black squad</Typography>
-          <Typography sx={{ fontWeight: 600 }}>careers</Typography>
+          <Typography sx={{ fontWeight: 500 }}>About</Typography>
+          <Typography sx={{ fontWeight: 500 }}>Red carpet</Typography>
+          <Typography sx={{ fontWeight: 500 }}>Black squad</Typography>
+          <Typography sx={{ fontWeight: 500 }}>favourate</Typography>
           <Box sx={{ display: "flex" }}>
-            <Typography sx={{ fontWeight: 600 }}>favourate</Typography>
+            <Typography sx={{ fontWeight: 500 }}>Become a seller</Typography>
             {/* <ExpandMoreIcon /> */}
           </Box>
           <Box

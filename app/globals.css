@@ -17,10 +17,30 @@
 }
 
 body {
+  overflow: "hidden";
+  overflow-x: hidden;
+  /* background: linear-gradient(
+    to bottom,
+    rgb(237, 220, 220),
+    #ebf141
+  ); */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dae7f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f0f904;
+  border-radius: 10px;
 }

@@ -8,7 +8,7 @@ import Image from "next/image";
 const Dashboard = () => {
   return (
     <main>
-      <div className="mx-10 mt-4">
+      <div className="mt-4">
         <Hero />
         <NewItems />
         <BlackCollection />
